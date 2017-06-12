@@ -148,28 +148,16 @@ p {
   section {
     text-align: center;
   }
-  body {
-    background: green;
-  }
 }
 @media (min-width: 768px) {
-  body {
-    background: orange;
-  }
   .pull-left-sm {
     float: left;
     display: block;
   }
 }
 @media (min-width: 992px) {
-  body {
-    background: gray;
-  }
 }
 @media (min-width: 1200px) {
-  body {
-    background: blue;
-  }
 }
 .m12 {
   margin: 0 14px 14px;
