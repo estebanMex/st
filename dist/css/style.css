@@ -1,0 +1,188 @@
+.navbar-starswars {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: #e7e7e7;
+  border: 0;
+}
+.navbar-starswars .navbar-nav {
+  margin: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navbar-starswars .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-starswars .navbar-nav > li > a:hover,
+.navbar-starswars .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-starswars .navbar-nav > .active > a,
+.navbar-starswars .navbar-nav > .active > a:hover,
+.navbar-starswars .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-starswars .navbar-nav > .disabled > a,
+.navbar-starswars .navbar-nav > .disabled > a:hover,
+.navbar-starswars .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-starswars .navbar-toggle {
+  border-color: #ddd;
+  border: 0;
+}
+.navbar-starswars .navbar-toggle:hover,
+.navbar-starswars .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-starswars .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-starswars .navbar-collapse {
+  text-align: center;
+}
+.navbar-starswars .navbar-collapse,
+.navbar-starswars .navbar-form {
+  border: 0;
+  border-color: #e7e7e7;
+}
+.navbar-starswars .navbar-nav > .open > a,
+.navbar-starswars .navbar-nav > .open > a:hover,
+.navbar-starswars .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555;
+}
+@media (max-width: 767px) {
+  .navbar-starswars .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-starswars .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-starswars .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-starswars .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-starswars .navbar-link {
+  color: #777;
+}
+.navbar-starswars .navbar-link:hover {
+  color: #333;
+}
+.navbar-starswars .btn-link {
+  color: #777;
+}
+.navbar-starswars .btn-link:hover,
+.navbar-starswars .btn-link:focus {
+  color: #333;
+}
+.navbar-starswars .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-starswars .btn-link:hover,
+.navbar-starswars .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-starswars .btn-link:focus {
+  color: #ccc;
+}
+[data-role="pub"] {
+  margin-top: 15px;
+}
+[data-role="parallaxe"] > img {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+[data-role="parallaxe"] {
+  /* The image used */
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgHeader {
+  background-image: url("/assets/header-bg-2x.png");
+}
+.bgKiloren {
+  background-image: url("/assets/kiloren-2x.jpg");
+}
+body {
+  min-height: 2000px;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 0.8em;
+}
+p {
+  padding-bottom: 0.7em;
+}
+.container section {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+.container section a {
+  text-decoration: underline;
+  color: #000;
+}
+.main-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+.secondary-content h2 {
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  section {
+    text-align: center;
+  }
+  body {
+    background: green;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: orange;
+  }
+  .pull-left-sm {
+    float: left;
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background: gray;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: blue;
+  }
+}
+.m12 {
+  margin: 0 14px 14px;
+}
+.m12 {
+  margin: 0 14px 14px 0;
+}
+.minh300 {
+  min-height: 300px;
+}
+.minh400 {
+  min-height: 400px;
+}
+.minh500 {
+  min-height: 500px;
+}

@@ -1,0 +1,144 @@
+// StarsWars navbar
+.navbar-starswars {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: @navbar-default-border;
+  border:0;
+
+  // .navbar-brand {
+  //   color: @navbar-default-brand-color;
+  //   &:hover,
+  //   &:focus {
+  //     color: @navbar-default-brand-hover-color;
+  //     background-color: @navbar-default-brand-hover-bg;
+  //   }
+  // }
+
+  // .navbar-text {
+  //   color: @navbar-default-color;
+  // }
+
+  .navbar-nav {
+		margin: 0px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+
+    > li > a {
+      color: #fff; //@navbar-default-link-color;
+
+      &:hover,
+      &:focus {
+      color: @navbar-starswars-link-color;
+      background-color:transparent;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+	    border-color: @navbar-default-toggle-border-color;
+	    border:0;
+	    &:hover,
+	    &:focus {
+	      background-color: @navbar-starswars-toggle-hover-bg;
+	    }
+	    .icon-bar {
+	      background-color: @navbar-starswars-toggle-icon-bar-bg;
+	    }
+  }
+
+  .navbar-collapse {
+  	text-align: center;
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+  	border:0;
+    border-color: @navbar-default-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-starswars-link-active-bg;
+        color: @navbar-default-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: @navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+      }
+    }
+  }
+}

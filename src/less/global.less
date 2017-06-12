@@ -1,0 +1,96 @@
+body {
+	min-height: 2000px;
+}
+
+h1,
+h2,
+h3 {
+	padding-bottom: 0.8em;
+}
+
+p {
+	padding-bottom: 0.7em;
+}
+
+.container {
+	section {
+		padding-top: @padding-section-top-bottom;
+		padding-bottom: @padding-section-top-bottom;
+
+		a {
+			text-decoration: underline;
+			color: #000;
+		}
+	}
+}
+
+.main-content {
+	font-size: @font-size-large;
+	font-weight: bold;
+}
+
+.secondary-content {
+	h2 {
+		text-align: center;
+		font-weight: bold;
+	}
+}
+// =================
+@media (max-width: @screen-sm-min) {
+	section {
+		text-align: center;
+	}
+
+	// body {
+	// 	background: green;
+	// }
+
+}
+@media (min-width: @screen-sm-min) {
+
+	// body {
+	// 	background: orange;
+	// }
+
+	.pull-left-sm {
+		float: left;
+		display: block;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+
+	body {
+		background: gray;
+	}
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+	body {
+		background: blue;
+	}
+	
+}
+// HELPERS =======================================================
+
+.m12 {
+	margin: 0 @font-size-base @font-size-base;
+}
+
+.m12 {
+	margin: 0 @font-size-base @font-size-base 0;
+}
+
+.minh300 {
+	min-height: 300px;
+}
+
+.minh400 {
+	min-height: 400px;
+}
+
+.minh500 {
+	min-height: 500px;
+}

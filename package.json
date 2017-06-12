@@ -1,0 +1,23 @@
+{
+  "name": "stars-wars.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "less": "^2.7.2"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:css" :"rm -r ./dist/css/* ",
+    "build:css": "lessc src/less/style.less ./dist/css/style.css",
+    "watch:css": "watch 'npm run build:css' --wait=0  --interval=0 src/*",
+    "server": "http-server -c0 -o -p 9090"
+  },
+  "author": "",
+  "license": "ISC"
+}
