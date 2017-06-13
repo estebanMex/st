@@ -111,12 +111,6 @@ fieldset[disabled] .navbar-starswars .btn-link:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bgHeader {
-  background-image: url("/assets/header-bg-2x.png");
-}
-.bgKiloren {
-  background-image: url("/assets/kiloren-2x.jpg");
-}
 body {
   min-height: 2000px;
 }

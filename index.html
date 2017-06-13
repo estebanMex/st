@@ -9,7 +9,7 @@
 	<title>Stars wars</title>
 
 	<!-- Booooooootstrap -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,900" rel="stylesheet" />
 	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/dist/css/style.css" />
 
@@ -59,7 +59,7 @@
 	<!-- Fixed navbar -->
 
 	<div class="container-fluid">
-		<div data-role="parallaxe" class="row bgHeader">
+		<div data-role="parallaxe" data-background="/assets/header-bg-2x.png" class="row">
 			<img src="/assets/logo.png" alt="" data-role="foreground" class="center-block img-responsive" />
 		</div>
 	</div>
@@ -86,8 +86,7 @@
 	</div>
 
 	<div class="container-fluid">
-		<div data-role="parallaxe" class="row bgKiloren minh500">
-		</div>
+		<div data-role="parallaxe" data-background="/assets/kiloren-2x.jpg" class="row minh500"></div>
 	</div>
 
 	<div class="container">
@@ -136,6 +135,8 @@
 	</div>
 
 	<script src="/src/js/btnBurgerMenu.js"></script>
+	<script src="/src/js/parallaxBasics.js"></script>
+	<script src="/src/js/index.js"></script>
 </body>
 
 </html>
